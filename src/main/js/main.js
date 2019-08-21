@@ -26,7 +26,9 @@ baddieCreator = function (x, y) {
             this.context.stroke();
         }
     });
-}
+};
+
+
 let canvas = kontra.getCanvas();
 
 baddies = [
@@ -40,6 +42,8 @@ kontra.initKeys();
 let hero = kontra.Sprite({
     x: 300,
     y: 250,
+    dx: 0,
+    dy: 0,
     radius: 10,
     render() {
         this.context.strokeStyle = 'white';
@@ -54,19 +58,16 @@ let hero = kontra.Sprite({
             count = 0;
         }
         if (kontra.keyPressed('left')) {
-            this.x -= 1;
+            this.dx = -1;
         }
         if (kontra.keyPressed('right')) {
-            this.x += 1;
+            this.dx = 1;
         }
         if (kontra.keyPressed('up')) {
-            this.y -= 1;
+            this.dy = -1;
         }
         if (kontra.keyPressed('down')) {
-            this.y += 1;
-        } else {
-            this.dx = 0;
-            this.dy = 0;
+            this.dy = 1;
         }
     }
 });
