@@ -69,7 +69,7 @@ let hero = kontra.Sprite({
             this.dy = 0;
         }
     }
-})
+});
 
 let gameLoop = kontra.GameLoop({
     update() {
@@ -77,14 +77,14 @@ let gameLoop = kontra.GameLoop({
             baddie.update()
         });
         hero.update();
-        if (timeout != 0) {
+        if (timeout !== 0) {
             timeout--;
         }
-        if (kontra.keyPressed('space') && timeout == 0) {
-            var position = heroPositions[count == timeToJump ? 0 : count + 1]
-            hero.x = position[0]
-            hero.y = position[1]
-            timeout = timeToJump
+        if (kontra.keyPressed('space') && timeout === 0) {
+            var position = heroPositions[count === timeToJump ? 0 : count + 1]
+            hero.x = position[0];
+            hero.y = position[1];
+            timeout = timeToJump;
             baddies.forEach(function (baddie) {
                 let dx1 = baddie.x - hero.x;
                 let dy1 = baddie.y - hero.y;
