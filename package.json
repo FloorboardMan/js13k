@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/FloorboardMan/js13k/issues"
   },
-  "homepage": "https://github.com/FloorboardMan/js13k#readme"
+  "homepage": "https://github.com/FloorboardMan/js13k#readme",
+  "dependencies": {
+    "kontra": "^6.3.0"
+  }
 }
