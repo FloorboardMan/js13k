@@ -1,12 +1,12 @@
 kontra.init();
 
-var timeToJump = 180;
-var timeout = 0;
-var baddieSpeed = 1.1;
-var gameRunning = true;
+let timeToJump = 180;
+let timeout = 0;
+let  baddieSpeed = 1.1;
+let  gameRunning = true;
 
-var heroPositions = [timeToJump];
-var count = 0;
+let  heroPositions = [timeToJump];
+let  count = 0;
 for (i = 0; i < timeToJump; i++) {
     heroPositions[i] = [300, 250];
 }
