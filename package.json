@@ -1,23 +1,23 @@
 {
   "name": "js13k",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Game for js13k",
+  "main": "src/main/js/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FloorboardMan/js13k.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Joseph Daunt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FloorboardMan/js13k/issues"
   },
   "homepage": "https://github.com/FloorboardMan/js13k#readme",
+  "scripts": {
+    "start": "node src/main/js/main.js"
+  },
   "dependencies": {
-    "kontra": "^6.3.0"
+    "kontra": "^6.4.0"
   }
 }
